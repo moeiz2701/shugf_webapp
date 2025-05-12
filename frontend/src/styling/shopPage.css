@@ -1,0 +1,80 @@
+.product-grid{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.shopPage{
+    margin-top: 60px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding-inline: 30px;
+   min-height: 70vh;
+}
+
+.product-selector{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(199, 199, 199);
+    background-color: rgb(58, 58, 58);
+    height: 30px;
+    padding-bottom: 10px;
+    padding-inline: 20px;
+    border-radius: 20px;
+    font-family: Arial;
+    font-size: 0.8em;
+   padding-right:25px;
+}
+.product-selector p:hover{
+    color: white;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    from {
+        transform:translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 480px) {
+    .product-selector {
+        overflow-x: auto; /* Changed from scroll to auto */
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 40px;
+        width: 250px;
+        scrollbar-color: #ff8127 #f0f0f0;
+        border-radius: 10px;
+        padding-bottom: 10px; /* Add padding to show full rounded scrollbar */
+    }
+
+    .product-selector::-webkit-scrollbar {
+        height: 8px;
+        width: calc(100% - 20px); /* Adjust width to account for rounded corners */
+        margin: 0 10px; /* Center the scrollbar */
+    }
+
+    .product-selector::-webkit-scrollbar-track {
+        background: #f0f0f0;
+        border-radius: 10px;
+        margin: 0 10px; /* Add margin to show rounded ends */
+    }
+
+    .product-selector::-webkit-scrollbar-thumb {
+        background: #ff8127;
+        border-radius: 10px;
+        border: 2px solid #f0f0f0;
+    }
+}
+

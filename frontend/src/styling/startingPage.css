@@ -1,0 +1,138 @@
+
+body, html {
+    background-color: rgba(241, 227, 203, 0.9);
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start; /* Start layout from the top */
+    height: 100vh;
+   
+    background-position: center; 
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    padding-bottom: 0; /* Add padding for top spacing */
+}
+
+#logo {
+    width: 40%;
+    max-width: 150px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.mainSection {
+    text-align: center;
+    margin-top: -80px;
+    z-index: 1;
+    opacity: 1;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    transition: transform 0.3s ease;
+    box-shadow: 0px 10px 30px rgb(128, 114, 70);
+     /* Add smooth hover effect */
+}
+
+.block:hover {
+    z-index: 10;
+    transform: scale(1.1);
+     /* Slight zoom on hover */
+}
+
+.gallery{
+    
+}
+
+.block:nth-child(2) {
+    top: 20%;
+    right: -5%;
+    background: url(../assets/shirt2.png) no-repeat 50% 50%;
+}
+
+.block:nth-child(3) {
+    top: 60%;
+    left: 60%;
+    background: url(../assets/shirt3.png) no-repeat 50% 50%;
+}
+
+.block:nth-child(4) {
+    top: 55%;
+    left: 10%;
+    background: url(../assets/shirt4.png) no-repeat 50% 50%;
+}
+
+.block:nth-child(5) {
+    top: -15%; 
+    left: 40%;
+    background: url(../assets/shirt5.png) no-repeat 50% 50%;
+}
+
+.block:nth-child(6) {
+    top: 10%;
+    left: -10%;
+
+    background: url(../assets/shirt6.png) no-repeat 50% 50%;
+}
+
+.block:nth-child(1) {
+    top: 75%;
+     /* Push partially off the left edge */
+    background: url(../assets/shirt1.png) no-repeat 50% 50%;
+}
+
+
+/* --- Responsive Design --- */
+@media screen and (max-width: 768px) {
+    
+
+    #logo {
+        width: 50%; /* Scale logo appropriately */
+        /* Adjust max size */
+    }
+
+    .mainSection {
+        margin-top: -50px; /* Adjust spacing */
+        padding-inline: 10px;       
+    }
+    .block{
+        width: 200px;
+        height: 200px;
+    }
+
+
+   
+
+
+    
+
+    
+}
+
+@media screen and (max-width: 480px) {
+   
+
+    #logo {
+        width: 60%;
+        max-width: 100px;
+    }
+    .mainSection {
+        margin-top: -30px;
+        font-size: 14px; /* Adjust text size */
+    }
+    .block{
+        width: 200px;
+        height: 200px;
+    }
+ 
+}

@@ -1,0 +1,29 @@
+# Node modules
+**/node_modules/
+
+# Build output
+frontend/dist/
+backend/build/
+*.log
+
+# Environment variables
+*.env
+.env.*
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Docker-related
+**/build/
+docker-compose.override.yml
+
+# Optional editor configs
+.vscode/
+.idea/
+*.sw?
+
+# npm lock files (optional; choose only one package manager)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'heading3';
+    src: url('../fonts/PilatedfreeRegular-K7xPo.otf') format('opentype'); /* Modern browsers */
+    font-weight: bold;
+    font-style: normal;
+}
+@media screen and (max-width: 458px) {
+    .slick-slide {
+       padding: 0 50px;
+       width: 300%;
+         /* Reduced padding on smaller screens */
+    }
+}
+
+
+.aboutPage{
+   
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+.aboutPage h1{
+    font-family: 'heading3';
+    color: black;
+}
+.aboutPage p{
+    color:rgb(80, 80, 80);
+    font-size: 1.2em;
+}
+@media screen and (max-width: 768px) {
+    .aboutPage p{
+       
+        font-size: 1em;
+    }
+    
+}
+.slick-prev, .slick-next {
+    color: black;
+    font-size: 30px;
+    z-index: 1; /* Ensure navigation is above images */
+}
+
+.slick-dots li button:before {
+    color: black; /* Change dot color */
+}
+.slick-slide {
+    display: flex;
+    justify-content: center;
+   
+    
+    
+}
+
+/* Optional: Add some space between images */
+.slick-track {
+    display: flex;
+    align-items: center; /* Vertically center images */
+}
+.imagesDisplay{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.aboutPage img{
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+}
